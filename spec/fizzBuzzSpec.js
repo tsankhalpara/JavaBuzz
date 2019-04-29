@@ -25,4 +25,16 @@ describe("FizzBuzz", function() {
     });
   });
 
+  describe('when playing, says', function() {
+    it('"Fizz" - if divisible by 3', function() {
+      expect(fizzbuzz.says(6)).toEqual("Fizz")
+    });
+    it('"Buzz" - if divisible by 5', function() {
+      expect(fizzbuzz.says(10)).toEqual("Buzz")
+    });
+    it('"FizzBuzz" - if divisible by 15', function() {
+      expect(fizzbuzz.says(15)).toEqual("FizzBuzz")
+    });
+  });
+
 });
